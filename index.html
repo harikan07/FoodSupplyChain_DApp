@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Supply Chain</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: auto; padding: 20px; }
+        .card { border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; }
+        .card h2 { margin-top: 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Food Supply Chain Management</h1>
+        <div class="card">
+            <h2>Add Food Item</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="origin">Origin:</label>
+            <input type="text" id="origin">
+            <button id="addItemButton">Add Item</button>
+        </div>
+        <div class="card">
+            <h2>Update Food Item</h2>
+            <label for="itemId">Item ID:</label>
+            <input type="number" id="itemId">
+            <label for="currentLocation">Current Location:</label>
+            <input type="text" id="currentLocation">
+            <label for="status">Status:</label>
+            <input type="text" id="status">
+            <button id="updateItemButton">Update Item</button>
+        </div>
+        <div class="card">
+            <h2>Set Food Item Price</h2>
+            <label for="priceItemId">Item ID:</label>
+            <input type="number" id="priceItemId">
+            <label for="price">Price (in wei):</label>
+            <input type="number" id="price">
+            <button id="setPriceButton">Set Price</button>
+        </div>
+        <div class="card">
+            <h2>Buy Food Item</h2>
+            <label for="buyItemId">Item ID:</label>
+            <input type="number" id="buyItemId">
+            <button id="buyItemButton">Buy Item</button>
+        </div>
+        <div class="card">
+            <h2>Get Food Item</h2>
+            <label for="getItemId">Item ID:</label>
+            <input type="number" id="getItemId">
+            <button id="getItemButton">Get Item</button>
+            <pre id="itemDetails"></pre>
+        </div>
+        <div class="card">
+            <h2>Get Food Item History</h2>
+            <label for="getHistoryItemId">Item ID:</label>
+            <input type="number" id="getHistoryItemId">
+            <button id="getHistoryButton">Get History</button>
+            <pre id="itemHistory"></pre>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
